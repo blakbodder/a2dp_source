@@ -9,7 +9,8 @@ tested on raspberry pi zero + bullseye + bluez 5.5  with ruark radio in
 bluetooth mode.  it should work with other devices that support A2DP.
 
 a2dp.py uses a hard-coded bd_addr (colon-separated hex digits that
-identify the speaker-device).  to find this do `bluetoothctl scan on`\
+identify the speaker-device).  to find this do\
+`bluetoothctl scan on`\
 patch the bd_addr into a2dp.py where it says `DEVICE_ADDR="AA:BB:CC:DD:EE:FF"`
 
 a2dp.py uses a cpython module to encode and pump out the data to the
