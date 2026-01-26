@@ -40,8 +40,5 @@ v1mono.wav is a short tune in mono format.\
 sin.wav is a stereo tone ~1kHz 1 second long.\
 the sbc library comes from sbc 1.3  and rtp.h is from bluez 4.101 
 
-if your device requires the pi to connect to it, try\
- `bluetoothctl connect XX:XX:XX:XX:XX:XX` 
-(substitute device bd_addr) in another console window while a2dp.py is 
-waiting for connection.  i have tried ConnectProfile(SINK_UUID) within 
-a2dp.py but that fails.
+if your device requires the pi to connect to it, use a2dpi.py instead of a2dp.py.
+the DEVICE_ADDR of a2dpi.py also needs editing.
